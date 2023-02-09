@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mealContext" prefHeight="291.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuestFormController">
+   <children>
+      <Label layoutX="31.0" layoutY="23.0" opacity="0.74" prefHeight="27.0" prefWidth="118.0" style="-fx-background-color: purple;" text="Select Meal" textFill="#060007">
+         <font>
+            <Font name="Baskerville Old Face" size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="149.0" layoutY="36.0" prefHeight="2.0" prefWidth="296.0" style="-fx-background-color: purple; -fx-border-color: purple;" />
+      <ImageView fitHeight="230.0" fitWidth="421.0" layoutX="12.0" layoutY="73.0" opacity="0.49" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/jj-snacks-soft-4-inch-pretzels-1280-1200x520.jpg" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="rbtnlocal" layoutX="47.0" layoutY="129.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="118.0" text="Local Meal">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="meal" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbtnchinese" layoutX="47.0" layoutY="163.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="137.0" text="Chinese Meal" toggleGroup="$meal">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbtnfrench" layoutX="53.0" layoutY="198.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="126.0" text="French Meal" toggleGroup="$meal">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <Separator layoutX="208.0" layoutY="103.0" orientation="VERTICAL" prefHeight="136.0" prefWidth="2.0" />
+      <RadioButton fx:id="rbtnbreakfast" layoutX="260.0" layoutY="129.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="118.0" text="Breakfast">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="type" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbtnlunch" layoutX="260.0" layoutY="163.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="91.0" text="Lunch" toggleGroup="$type">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbtndinner" layoutX="260.0" layoutY="198.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="91.0" text="Dinner" toggleGroup="$type">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="16.0" layoutY="239.0" prefHeight="17.0" prefWidth="267.0" text="Please Select one meal and one time for meal " textFill="#e41212">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="378.0" layoutY="255.0" mnemonicParsing="false" onAction="#save2OnAction" style="-fx-border-color: gray; -fx-border-radius: 5;" text="Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="27.0" layoutY="256.0" mnemonicParsing="false" onAction="#backonAction" prefHeight="27.0" prefWidth="44.0" text="Back ">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

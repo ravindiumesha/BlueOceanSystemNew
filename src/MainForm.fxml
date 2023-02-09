@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainFormContext" prefHeight="352.0" prefWidth="537.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/purple-grungy-wall-texture-background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="349.0" fitWidth="326.0" layoutX="276.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Dining-room-with-floral-lavender-wallpaper-60906.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="375.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home  |" wrappingWidth="54.44921875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Button alignment="CENTER" layoutX="375.0" layoutY="141.0" mnemonicParsing="false" onAction="#openAdminOnAction" prefHeight="42.0" prefWidth="166.0" style="-fx-background-color: purple; -fx-background-radius: 30;" text="Admin" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bell MT" size="22.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="375.0" layoutY="219.0" mnemonicParsing="false" onAction="#openReceptionistOnAction" prefHeight="42.0" prefWidth="166.0" style="-fx-background-color: purple; -fx-background-radius: 30;" text="Receptionist" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bell MT" size="22.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="296.0" layoutX="14.0" layoutY="42.0" opacity="0.5" stroke="WHITE" strokeType="OUTSIDE" width="303.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#9454ab" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text fill="WHITE" layoutX="41.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello | Welcome " wrappingWidth="249.0">
+         <font>
+            <Font name="Verdana Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="23.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To page Blue Ocean" wrappingWidth="288.0">
+         <font>
+            <Font name="Verdana Bold" size="23.0" />
+         </font>
+      </Text>
+      <Separator layoutX="343.0" layoutY="198.0" prefHeight="3.0" prefWidth="228.0" style="-fx-background-color: black; -fx-border-color: black;" />
+      <ImageView fitHeight="74.0" fitWidth="133.0" layoutX="41.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/8c05baa0822fc4cadaad8b1b252b837e.jpeg" />
+         </image>
+      </ImageView>
+      <Text layoutX="440.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Us |" wrappingWidth="91.44922876358032">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="511.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacts  |" wrappingWidth="74.00000095367432">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="91.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel &amp; Resort" wrappingWidth="152.791015625">
+         <font>
+            <Font name="Forte" size="21.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

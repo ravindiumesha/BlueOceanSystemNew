@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="windowReceptionistLogoContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReceptionistLogFormController">
+   <children>
+      <ImageView fitHeight="419.0" fitWidth="625.0" layoutX="-6.0" layoutY="-7.0" opacity="0.77" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/purple-grungy-wall-texture-background.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#da1fff" height="78.0" layoutX="-8.0" stroke="#d71fd7" strokeType="INSIDE" width="625.0" />
+      <Text fill="WHITE" layoutX="187.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RECEPTIONIST" wrappingWidth="321.099609375">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="101.0" layoutX="26.0" layoutY="95.0" stroke="#f8f8f8" strokeType="INSIDE" width="129.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#c134c6" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <Shadow />
+         </effect>
+      </Rectangle>
+      <Text layoutX="327.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="275.44921875">
+         <font>
+            <Font name="Wingdings 3" size="25.0" />
+         </font>
+      </Text>
+      <Button layoutX="13.0" layoutY="23.0" mnemonicParsing="false" onAction="#backToReceptionistOnAction" prefHeight="27.0" prefWidth="68.0" style="-fx-background-radius: 10;" text="Back">
+         <font>
+            <Font name="Sitka Text Bold" size="14.0" />
+         </font>
+      </Button>
+      <Group layoutY="110.0">
+         <children>
+            <Group layoutY="16.0">
+               <children>
+                  <Group />
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="101.0" layoutX="33.0" layoutY="230.0" stroke="#f8f8f8" strokeType="INSIDE" width="129.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#c134c6" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <Shadow />
+         </effect>
+      </Rectangle>
+      <ImageView fitHeight="101.0" fitWidth="116.0" layoutX="40.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/cleaning-with-spray-detergent-rubber-gloves-and-dish-cloth-on-work-picture-id1202033073.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="116.0" layoutX="33.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/greeting-guest-by-reception.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="34.0" layoutY="308.0" mnemonicParsing="false" onAction="#guestOnAction" prefHeight="23.0" prefWidth="129.0" text="ROOM MAINTAINCE">
+         <font>
+            <Font name="Yu Gothic Bold" size="11.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="anchorePane2Context" layoutX="170.0" layoutY="93.0" opacity="0.82" prefHeight="291.0" prefWidth="435.0" style="-fx-background-color: gray; -fx-border-color: white; -fx-border-radius: 10;" />
+      <Button layoutX="26.0" layoutY="182.0" mnemonicParsing="false" onAction="#addGuestOnAction" prefHeight="28.0" prefWidth="129.0" text="ADD GUEST">
+         <font>
+            <Font name="Yu Gothic Bold" size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
